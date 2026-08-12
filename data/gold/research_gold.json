@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "case_id": "脱敏-主分支-检索命中",
+      "scope": {
+        "team_id": "team-aurora",
+        "project_id": "project-orbit",
+        "repository": "repo-simulated",
+        "branch": "main",
+        "experiment_environment": "offline-lab-a"
+      },
+      "candidate_ids": [
+        "evidence-main-001",
+        "evidence-main-002",
+        "evidence-main-003"
+      ],
+      "relevant_ids": [
+        "evidence-main-002"
+      ]
+    },
+    {
+      "case_id": "脱敏-隔离分支-环境",
+      "scope": {
+        "team_id": "team-aurora",
+        "project_id": "project-orbit",
+        "repository": "repo-simulated",
+        "branch": "experiment-isolated",
+        "experiment_environment": "offline-lab-b"
+      },
+      "candidate_ids": [
+        "evidence-isolated-001",
+        "evidence-isolated-002"
+      ],
+      "relevant_ids": [
+        "evidence-isolated-001"
+      ]
+    }
+  ]
+}
