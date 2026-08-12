@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+*.py[cod]
+*.db
+*.faiss
+memory_store/
+data/processed/
+data/raw/*.jsonl
+!data/raw/office_demo_events.jsonl
+data/raw/*.db
+data/eval_reports/
+*.log
+/.venv/
