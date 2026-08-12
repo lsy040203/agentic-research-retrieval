@@ -1,0 +1,21 @@
+[project]
+name = "os-agent-memory"
+version = "0.1.0"
+description = "Memory candidate extractors for OS Agent"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115,<1.0",
+    "pydantic>=2.0,<3.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+branch = true
+source = ["core", "extractors", "memory"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
